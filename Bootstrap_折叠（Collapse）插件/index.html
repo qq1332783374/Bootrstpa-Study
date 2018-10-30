@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<script type="text/javascript" src="js/jquery-1.11.0.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.min.js" ></script>
+	</head>
+	<body>
+		<div class="container">
+			<h4 class="text-primary">创建可折叠的分组或折叠面板（accordion）</h4>
+			<div class="panel-group" id="accordion">
+				<div class="panel panel-default" >
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a href="#collapseOne" data-toggle="collapse" data-parent="#accordion">
+								点击我进行展开，再次点击我进行折叠。第 1 部分
+							</a>
+						</h4>
+					</div>
+					<div class="panel-collapse collapse collapse-in" id="collapseOne">
+						<div class="panel-body">
+							Nihil anim keffiyeh helvetica, craft beer labore wes anderson  cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a href="#collapseTow" data-toggle="collapse" data-parent="#accordion">
+								点击我进行展开，再次点击我进行折叠。第 2 部分
+							</a>
+						</h4>
+					</div>
+					<div class="panel-body collapse collapse-in" id="collapseTow">
+						<div class="panel-body">
+							Nihil anim keffiyeh helvetica, craft beer labore wes anderson  cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+						</div>
+					</div>
+				</div>
+				
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a href="#collapseThree" data-toggle="collapse" data-parent="#accordion">
+								点击我进行展开，再次点击我进行折叠。第 3 部分
+							</a>
+						</h4>
+					</div>
+					<div class="panel-body collapse collapse-in" id="collapseThree">
+						<div class="panel-body">
+							Nihil anim keffiyeh helvetica, craft beer labore wes anderson  cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
+			<h4 class="text-primary">创建不带 accordion 标记的简单的可折叠组件（collapsible）</h4>
+			<button type="button" class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#deom">简单可折叠组件 </button>
+			<div id="deom" class="collapse in">
+				Nihil anim keffiyeh helvetica, craft beer labore wes anderson  cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+			</div>
+			
+			<h4 class="text-primary">折叠方法</h4>
+			<div class="panel panel-group" id="accordion">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a href="#collapseOne_1" data-toggle="collapse" data-parent="#accordion" >
+								点击我进行展开，再次点击我进行折叠。第 1 部分--hide 方法
+							</a>
+						</h4>
+					</div>
+					<div id="collapseOne_1" class=" panel-collapse collapse in">
+						<div class="panel-body">
+							Nihil anim keffiyeh helvetica, craft beer labore wes anderson  cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-success">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a href="#collapseTow_1" ></a>
+						</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<script type="text/javascript" src="js/jquery-1.11.0.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.min.js" ></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="alert alert-danger" id="myAlert">
+				<a href="#" class="close" data-toggle="modal" data-target="#myModal">&times;</a>
+				<strong>这个危险</strong>
+			</div>
+			<div class="alert alert-success" id="myAlert_1">
+				<a href="#" class="close" data-toggle="modal" data-target="#myModal">&times;</a>
+				<strong>这个很成功</strong>
+			</div>
+			
+		</div>
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss = "modal">&times;</button>
+						<h4 class="modal-title">删除</h4>
+					</div>
+					<div class="modal-body">
+						确定删除吗？
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary sure" data-dismiss = "modal">确定</button>
+						<button type="button" class="btn btn-default" data-dismiss = "modal">取消</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<script>
+			$(function(){
+				var _this = null;
+				$(document).on("click",".alert",function(){
+					_this = $(this);
+				});
+				$(document).on("click",".sure",function(){
+					_this.alert("close");
+					console.log()
+				});
+				
+				
+			})
+		</script>
+	</body>
+	
+</html>

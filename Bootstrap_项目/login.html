@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<script type="text/javascript" src="js/jquery-1.11.0.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.min.js" ></script>
+		<style>
+			body{
+				background: url(img/bg_1.jpeg) no-repeat;
+				background-size: 100%;
+				font-family: "微软雅黑";
+			}
+			.login_context{
+				width: 300px;
+				margin: 200px auto;
+				padding: 15px 25px;
+				background: rgba(255,255,255,0.55);
+			}
+			#ver{
+				display: inline-block;
+				width: 160px;
+			}
+			.verify{
+				display: inline-block;
+				margin-left: 15px;
+   				font-size: 22px;
+   				cursor: pointer;
+			}
+			#login{
+				width: 100%;
+			}
+		</style>
+	</head>
+	<body >
+		<div class="container">
+			<div class="login_context">
+				<h3 class="text-center">电影系统管理中心</h3>
+				<form class="form-horizontal">
+					<div class="form-group">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="账号是：admin" id="user"/>
+							<div class="input-group-addon">
+								<i class="glyphicon glyphicon-user"></i>
+							</div>
+							
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="密码是：123456" id="pas"/>
+							<div class="input-group-addon">
+								<i class="glyphicon glyphicon-tower"></i>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="请填写验证码" id="ver"/>
+						<div class="verify text-primary">
+							
+						</div>
+					</div>
+					<div class="form-group ">
+						<a class="btn btn-primary " id="login">登录</a>
+					</div>
+				</form>
+			</div>
+		</div>
+		
+		<script>
+			$(function(){
+				 function yzm(){  /*验证码*/
+			        var arr = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','0','1','2','3','4','5','6','7','8','9'];
+			        var str = '';
+			        for(var i = 0 ; i < 4 ; i ++ )
+			            str += ''+arr[Math.floor(Math.random() * arr.length)];
+			        return str;
+			    }
+				$(".verify").text(yzm())  /*验证码初始化*/
+				$(".verify").click(function(){   /*产生随机验证码*/
+					$(this).html(yzm())
+				})
+				
+				
+				$("#user").focus(function(){     /*用户名验证*/
+					var fat = $(this).parents(".form-group")
+					$(fat).addClass("has-warning").removeClass("has-error has-success")   /*输入状态*/
+				})
+				$("#user").blur(function(){
+					var fat = $(this).parents(".form-group")
+					var input_val = $(this).val()
+					if(input_val!="admin"){
+						$(fat).addClass("has-error").removeClass("has-warning has-success") 
+						$(this).focus() 
+					}else{
+						$(fat).addClass("has-success").removeClass("has-warning has-error") 
+					}
+				})
+				
+				$("#pas").focus(function(){  /*密码验证*/
+					var fat = $(this).parents(".form-group")
+					$(fat).addClass("has-warning").removeClass("has-error has-success")
+				})
+				$("#pas").blur(function(){
+					var fat = $(this).parents(".form-group")
+					var input_val = $(this).val()
+					if(input_val!="123456"){
+						$(fat).addClass("has-error").removeClass("has-warning has-success") 
+						$(this).focus()
+					}else{
+						$(fat).addClass("has-success").removeClass("has-warning has-error") 
+					}
+				})		
+				
+				
+				$("#ver").focus(function(){   /*验证码验证*/
+					var fat = $(this).parents(".form-group")
+					$(fat).addClass("has-warning").removeClass("has-error has-success")   /*输入状态*/
+				})
+				var ver_1 = $(".verify").text() 
+				$("#ver").blur(function(){
+					var fat = $(this).parents(".form-group")
+					var input_val = $(this).val()
+					if(input_val == ver_1 ){
+						/*$(fat).addClass("has-error").removeClass("has-warning has-success") */
+						alert("验证通过")
+						window.location.href = "index.html"
+					}else{
+						/*$(fat).addClass("has-success").removeClass("has-warning has-error") */
+						alert("验证码有误")
+						$(this).val("")
+					}
+				})
+				
+				
+				
+			})
+			
+		</script>
+	</body>
+</html>

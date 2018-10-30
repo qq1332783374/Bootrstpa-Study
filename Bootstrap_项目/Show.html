@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/animate.css" />
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<script type="text/javascript" src="js/jquery-1.11.0.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.min.js" ></script>
+		<script type="text/javascript" src="js/base.js" ></script>
+	</head>
+	<body>
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="index.html" class="navbar-brand">
+						<img src="img/user_1.jpg" class="img-circle user_logo" />
+					</a>
+				</div>
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="#">管理员：<strong>大美女</strong> </a>
+					</li>
+					<li class="navbar-btn">
+						<button type="button" class="btn btn-danger exit">退出登录</button>
+					</li>
+					<li>
+						<a href="#">20:00:00:晚上好</a>
+					</li>
+				</ul>
+			</div>
+		</nav> <!--导航栏end-->
+		
+		<div>
+			<div class="row">
+				<div class="col-md-2 col-lg-2 col-sm-2 col-xs-12 ">  <!--侧栏begin-->
+					<div class="panel-group" id="accordion">
+						<div class="panel panel-primary" >
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a href="#collapseOne" data-toggle="collapse" data-parent="#accordion" style="text-decoration: none;" >
+										<i class="glyphicon glyphicon-th-list"></i>  菜单列表
+									</a>
+								</h4>
+							</div>
+							<div class="panel-collapse collapse collapse-in" id="collapseOne">
+								<div class="panel-body">
+									Nihil anim keffiyeh helvetica, craft beer labore wes anderson  cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+								</div>
+							</div>
+						</div>
+						
+						<div class="panel panel-primary" >
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a href="#collapseTow" data-toggle="collapse" data-parent="#accordion" style="text-decoration: none;">
+										<i class="glyphicon glyphicon-wrench"></i>  基本设置
+									</a>
+								</h4>
+							</div>
+							<div class="panel-collapse collapse collapse-in" id="collapseTow">
+								<div class="panel-body">
+									<ul class="nav nav-pills nav-stacked">
+										<li class="dropdown ">
+											<a href="fcm.html"><i class="glyphicon glyphicon-triangle-right"></i> 电影类别管理</a>
+										</li>
+										<li>
+											<a href="fim.html"><i class="glyphicon glyphicon-triangle-right"></i> 电影信息管理</a>
+										</li>
+										<li>
+											<a href="HM.html"><i class="glyphicon glyphicon-triangle-right"></i> 放映大厅管理</a>
+										</li>
+										<li>
+											<a href="Staff.html"><i class="glyphicon glyphicon-triangle-right"></i> 员工信息管理</a>
+										</li>
+										<li class="active">
+											<a href="Show.html"><i class="glyphicon glyphicon-triangle-right"></i> 放映信息管理</a>
+										</li>
+										<li>
+											<a href="Sale.html"><i class="glyphicon glyphicon-triangle-right"></i> 售票信息管理</a>
+										</li>
+										<li>
+											<a href="Earnings.html"><i class="glyphicon glyphicon-triangle-right"></i> 收益管理</a>
+										</li>
+										<li>
+											<a href="Overall.html"><i class="glyphicon glyphicon-triangle-right"></i> 总收入管理</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>    <!--侧栏end-->
+				
+				<div class="col-md-10 col-lg-10 col-sm-10 col-xs-10 " >    <!--主栏begin-->
+					<div class="row">  <!--面包屑导航栏begin-->
+						<div class="col-ms-12">
+							<ol class="breadcrumb">
+								<li><a href="#"><span class="glyphicon glyphicon-home"></span> 首页</a> </li>
+								<li><a href="#">网址信息</a> </li>
+								<li class="active"><a href="#">当前语言:<span class="text-danger">中文</span> </a> </li>
+							</ol>
+						</div>
+					</div>  <!--面包屑导航栏end-->
+					
+					<div class="row container-fluid">
+						<div class="col-md-12 ">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<i class="glyphicon glyphicon-list"></i> 操作信息管理
+									</h4>
+								</div>
+								<div class="panel-body">
+									<table class="table text-center table-hover table_show">
+										<tr>
+											<td><strong>编号</strong></td>
+											<td><strong>电影信息</strong></td>
+											<td><strong>大厅信息</strong></td>
+											<td><strong>员工</strong></td>
+											<td><strong>开始时间</strong></td>
+											<td><strong>结束时间</strong></td>
+											<td><strong>票价</strong></td>
+											<td><strong>操作</strong></td>
+										</tr>
+										<tr>
+											<td>17</td>
+											<td>大圣归来</td>
+											<td>十楼二号大厅</td>
+											<td>猴子</td>
+											<td>2018-05-02 13:14</td>
+											<td>2018-05-02 15:14</td>
+											<td>55.5￥</td>
+											<td>
+												<button class="btn btn-info modification show_change" type="button" id="alter" data-toggle = "modal" data-target = "#myModal_show_change"><i class="glyphicon glyphicon-pencil"></i> 修改</button>
+												<button class="btn btn-danger modification show_del" type="button" ><i class="glyphicon glyphicon-eye-close"></i> 删除</button>
+											</td>
+										</tr>
+										<tr>
+											<td>18</td>
+											<td>大圣归来_1</td>
+											<td>十楼四号大厅</td>
+											<td>猴子</td>
+											<td>2018-05-02 13:14</td>
+											<td>2018-05-02 15:14</td>
+											<td>55.5￥</td>
+											<td>
+												<button class="btn btn-info modification show_change" type="button" id="alter" data-toggle = "modal" data-target = "#myModal_show_change"><i class="glyphicon glyphicon-pencil"></i> 修改</button>
+												<button class="btn btn-danger modification show_del" type="button" ><i class="glyphicon glyphicon-eye-close"></i> 删除</button>
+											</td>
+										</tr>
+										<tr>
+											<td>19</td>
+											<td>大圣归来_2</td>
+											<td>十楼五号大厅</td>
+											<td>猴子</td>
+											<td>2018-05-02 13:14</td>
+											<td>2018-05-02 15:14</td>
+											<td>55.5￥</td>
+											<td>
+												<button class="btn btn-info modification show_change" type="button" id="alter" data-toggle = "modal" data-target = "#myModal_show_change"><i class="glyphicon glyphicon-pencil"></i> 修改</button>
+												<button class="btn btn-danger modification show_del" type="button" ><i class="glyphicon glyphicon-eye-close"></i> 删除</button>
+											</td>
+										</tr>
+										<tr>
+											<td>20</td>
+											<td>大圣归来_3</td>
+											<td>十楼六号大厅</td>
+											<td>猴子</td>
+											<td>2018-05-02 13:14</td>
+											<td>2018-05-02 15:14</td>
+											<td>55.5￥</td>
+											<td>
+												<button class="btn btn-info modification show_change" type="button" id="alter" data-toggle = "modal" data-target = "#myModal_show_change"><i class="glyphicon glyphicon-pencil"></i> 修改</button>
+												<button class="btn btn-danger modification show_del" type="button" ><i class="glyphicon glyphicon-eye-close"></i> 删除</button>
+											</td>
+										</tr>
+									</table>
+								</div>
+								<div class="panel-footer">
+									<div class="text-center">
+										<button class="btn btn-success" data-toggle="modal" data-target="#myModal_show_add" id="add"><i class="glyphicon glyphicon-ok"></i> 增加</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					
+				</div>     <!--主栏end-->
+			</div>
+		</div>	
+		
+		<!--change模态框__begin-->
+		<div class="modal fade" id="myModal_show_change" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title" id="myModalLabel">请输入您要修改的信息</h4>
+					</div>
+					<div class="modal-body">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<i class="glyphicon glyphicon-edit"></i> 修改放映信息
+								</h4>
+							</div>
+							<div class="panel-body">
+								<form class="form-horizontal">
+									<div class="form-group">
+										<label class="col-sm-2 control-label">编号:</label>
+										<div class="col-sm-10">
+											<input type="text" class="form-control" id="name" />
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-sm-2 control-label">电影信息:</label>
+										<div class="col-sm-4">
+											<select class="form-control" id="sel_f">
+												<option value="大圣归来">大圣归来</option>
+												<option value="大圣走不动了">大圣走不动了</option>
+												<option value="大圣不走了">大圣不走了</option>
+												<option value="大圣走了">大圣走了</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-sm-2 control-label">大厅信息:</label>
+										<div class="col-sm-4">
+											<select class="form-control" id="sel_h">
+												<option value="十楼一号大厅">十楼一号大厅</option>
+												<option value="十楼二号大厅">十楼二号大厅</option>
+												<option value="十楼三号大厅">十楼三号大厅</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-sm-2 control-label">员工信息:</label>
+										<div class="col-sm-4">
+											<select class="form-control" id="sel_r">
+												<option value="张三">张三</option>
+												<option value="李四">李四</option>
+												<option value="王五">王五</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-sm-2 control-label">开始时间:</label>
+										<div class="col-sm-10">
+											<input type="text" class="form-control" id="name" />
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-sm-2 control-label">结束时间:</label>
+										<div class="col-sm-10">
+											<input type="text" class="form-control" id="user" />
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-sm-2 control-label">票价:</label>
+										<div class="col-sm-10">
+											<input type="text" class="form-control" id="times" />
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="col-sm-offset-2 col-sm-10">
+											<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+											<button type="button" class="btn btn-primary show_change_ok" data-dismiss="modal"><i class="glyphicon glyphicon-ok"></i> 提交更改</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> <!--cahnge模态框__end-->
+		
+				
+		<!--add模态框_begin-->
+		<div class="modal fade" id="myModal_show_add" tabindex="-3" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title" id="myModalLabel">请输入您要修改的信息</h4>
+					</div>
+					<div class="modal-body">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<i class="glyphicon glyphicon-edit"></i> 修改放映信息
+								</h4>
+							</div>
+							<div class="panel-body">
+								<form class="form-horizontal">
+									<div class="form-group">
+										<label class="col-sm-2 control-label">编号:</label>
+										<div class="col-sm-10">
+											<input type="text" class="form-control" id="name" />
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-sm-2 control-label">电影信息:</label>
+										<div class="col-sm-4">
+											<select class="form-control" id="sel_f_1">
+												<option value="大圣归来">大圣归来</option>
+												<option value="大圣走不动了">大圣走不动了</option>
+												<option value="大圣不走了">大圣不走了</option>
+												<option value="大圣走了">大圣走了</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-sm-2 control-label">大厅信息:</label>
+										<div class="col-sm-4">
+											<select class="form-control" id="sel_h_1">
+												<option value="十楼一号大厅">十楼一号大厅</option>
+												<option value="十楼二号大厅">十楼二号大厅</option>
+												<option value="十楼三号大厅">十楼三号大厅</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-sm-2 control-label">员工信息:</label>
+										<div class="col-sm-4">
+											<select class="form-control" id="sel_r_1">
+												<option value="张三">张三</option>
+												<option value="李四">李四</option>
+												<option value="王五">王五</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-sm-2 control-label">开始时间:</label>
+										<div class="col-sm-10">
+											<input type="text" class="form-control" id="name" />
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-sm-2 control-label">结束时间:</label>
+										<div class="col-sm-10">
+											<input type="text" class="form-control" id="user" />
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-sm-2 control-label">票价:</label>
+										<div class="col-sm-10">
+											<input type="text" class="form-control" id="times" />
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="col-sm-offset-2 col-sm-10">
+											<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+											<button type="button" class="btn btn-primary show_add" data-dismiss="modal"><i class="glyphicon glyphicon-ok"></i> 提交更改</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--add模态框_end-->
+		
+		<script>
+			
+		</script>
+	</body>
+</html>

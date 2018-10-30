@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/animate.css" />
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<script type="text/javascript" src="js/jquery-1.11.0.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.min.js" ></script>
+		<script type="text/javascript" src="js/base.js" ></script>
+	</head>
+	<body>
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="index.html" class="navbar-brand">
+						<img src="img/user_1.jpg" class="img-circle user_logo" />
+					</a>
+				</div>
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="#">管理员：<strong>大美女</strong> </a>
+					</li>
+					<li class="navbar-btn">
+						<button type="button" class="btn btn-danger exit">退出登录</button>
+					</li>
+					<li>
+						<a href="#">20:00:00:晚上好</a>
+					</li>
+				</ul>
+			</div>
+		</nav> <!--导航栏end-->
+		
+		<div>
+			<div class="row">
+				<div class="col-md-2 col-lg-2 col-sm-2 col-xs-12 ">  <!--侧栏begin-->
+					<div class="panel-group" id="accordion">
+						<div class="panel panel-primary" >
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a href="#collapseOne" data-toggle="collapse" data-parent="#accordion" style="text-decoration: none;" >
+										<i class="glyphicon glyphicon-th-list"></i>  菜单列表
+									</a>
+								</h4>
+							</div>
+							<div class="panel-collapse collapse collapse-in" id="collapseOne">
+								<div class="panel-body">
+									Nihil anim keffiyeh helvetica, craft beer labore wes anderson  cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+								</div>
+							</div>
+						</div>
+						
+						<div class="panel panel-primary" >
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a href="#collapseTow" data-toggle="collapse" data-parent="#accordion" style="text-decoration: none;">
+										<i class="glyphicon glyphicon-wrench"></i>  基本设置
+									</a>
+								</h4>
+							</div>
+							<div class="panel-collapse collapse collapse-in" id="collapseTow">
+								<div class="panel-body">
+									<ul class="nav nav-pills nav-stacked">
+										<li class="dropdown ">
+											<a href="fcm.html"><i class="glyphicon glyphicon-triangle-right"></i> 电影类别管理</a>
+										</li>
+										<li>
+											<a href="fim.html"><i class="glyphicon glyphicon-triangle-right"></i> 电影信息管理</a>
+										</li>
+										<li>
+											<a href="HM.html"><i class="glyphicon glyphicon-triangle-right"></i> 放映大厅管理</a>
+										</li>
+										<li>
+											<a href="Staff.html"><i class="glyphicon glyphicon-triangle-right"></i> 员工信息管理</a>
+										</li>
+										<li>
+											<a href="Show.html"><i class="glyphicon glyphicon-triangle-right"></i> 放映信息管理</a>
+										</li>
+										<li>
+											<a href="Sale.html"><i class="glyphicon glyphicon-triangle-right"></i> 售票信息管理</a>
+										</li>
+										<li class="active">
+											<a href="Earnings.html"><i class="glyphicon glyphicon-triangle-right"></i> 收益管理</a>
+										</li>
+										<li>
+											<a href="Overall.html"><i class="glyphicon glyphicon-triangle-right"></i> 总收入管理</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>    <!--侧栏end-->
+				
+				<div class="col-md-10 col-lg-10 col-sm-10 col-xs-10 " >    <!--主栏begin-->
+					<div class="row">  <!--面包屑导航栏begin-->
+						<div class="col-ms-12">
+							<ol class="breadcrumb">
+								<li><a href="#"><span class="glyphicon glyphicon-home"></span> 首页</a> </li>
+								<li><a href="#">网址信息</a> </li>
+								<li class="active"><a href="#">当前语言:<span class="text-danger">中文</span> </a> </li>
+							</ol>
+						</div>
+					</div>  <!--面包屑导航栏end-->
+					
+					<div class="row container-fluid">
+						<div class="col-md-12 ">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<i class="glyphicon glyphicon-list"></i> 操作信息管理
+									</h4>
+								</div>
+								<div class="panel-body">
+									<table class="table text-center table-hover table_ear">
+										<tr>
+											<td><strong>编号</strong></td>
+											<td><strong>电影信息</strong></td>
+											<td><strong>大厅信息</strong></td>
+											<td><strong>员工</strong></td>
+											<td><strong>开始时间</strong></td>
+											<td><strong>结束时间</strong></td>
+											<td><strong>票价</strong></td>
+											<td><strong>卖出</strong></td>
+											<td><strong>操作</strong></td>
+										</tr>
+										<tr>
+											<td>17</td>
+											<td>大圣归来</td>
+											<td>十楼二号大厅</td>
+											<td>猴子</td>
+											<td>2018-05-02 13:14</td>
+											<td>2018-05-02 15:14</td>
+											<td><span>55.5</span>￥</td>
+											<td>2</td>
+											<td>
+												<button class="btn btn-info modification Ear_check" type="button"  data-toggle = "modal" data-target = "#myModal_Ear_check"><i class="glyphicon glyphicon-eye-open"></i> 查看收益</button>
+											</td>
+										</tr>
+										<tr>
+											<td>18</td>
+											<td>大圣归来_1</td>
+											<td>十楼四号大厅</td>
+											<td>猴子</td>
+											<td>2018-05-02 13:14</td>
+											<td>2018-05-02 15:14</td>
+											<td><span>55.5</span>￥</td>
+											<td>3</td>
+											<td>
+												<button class="btn btn-info modification Ear_check" type="button"  data-toggle = "modal" data-target = "#myModal_Ear_check"><i class="glyphicon glyphicon-eye-open"></i> 查看收益</button>
+											</td>
+										</tr>
+										<tr>
+											<td>19</td>
+											<td>大圣归来_2</td>
+											<td>十楼五号大厅</td>
+											<td>猴子</td>
+											<td>2018-05-02 13:14</td>
+											<td>2018-05-02 15:14</td>
+											<td><span>55.5</span>￥</td>
+											<td>4</td>
+											<td>
+												<button class="btn btn-info modification Ear_check" type="button"  data-toggle = "modal" data-target = "#myModal_Ear_check"><i class="glyphicon glyphicon-eye-open"></i> 查看收益</button>
+											</td>
+										</tr>
+										<tr>
+											<td>20</td>
+											<td>大圣归来_3</td>
+											<td>十楼六号大厅</td>
+											<td>猴子</td>
+											<td>2018-05-02 13:14</td>
+											<td>2018-05-02 15:14</td>
+											<td><span>55.5</span>￥</td>
+											<td>5</td>
+											<td>
+												<button class="btn btn-info modification Ear_check" type="button"  data-toggle = "modal" data-target = "#myModal_Ear_check"><i class="glyphicon glyphicon-eye-open"></i> 查看收益</button>
+											</td>
+										</tr>
+										
+									</table>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					
+					
+				</div>     <!--主栏end-->
+			</div>
+		</div>	
+		
+		<!--alter模态框__begin-->
+		<div class="modal fade" id="myModal_Ear_check" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title" id="myModalLabel">您要的信息</h4>
+					</div>
+					<div class="modal-body">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<i class="glyphicon glyphicon-edit"></i> 收益信息
+								</h4>
+							</div>
+							<div class="panel-body">
+								<table class="table table-hover text-center table_Ear_check">
+									<tr>
+										<td><strong>票价</strong></td>
+										<td><strong>已卖出的座位</strong></td>
+										<td><strong>小计</strong></td>
+									</tr>
+									<tr>
+										<td>55.5￥</td>
+										<td>2</td>
+										<td><span>110</span>￥</span></td>
+									</tr>
+									
+									<tr>
+										<td colspan="3">
+											<h4>合计收益：<span>111.0</span>￥</h4>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="4">
+											<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="glyphicon glyphicon-eye-close"></i> 关闭</button>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> <!--alter模态框__end-->
+		
+		<!--alter模态框_1__begin-->
+		<div class="modal fade" id="myModal_alter_1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel_1" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title" id="myModalLabel">您要的信息</h4>
+					</div>
+					<div class="modal-body">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<i class="glyphicon glyphicon-edit"></i> 收益信息
+								</h4>
+							</div>
+							<div class="panel-body">
+								<table class="table table-hover text-center">
+									<tr>
+										<td><strong>已卖出的座位</strong></td>
+										<td><strong>票价</strong></td>
+										<td><strong>小计</strong></td>
+									</tr>
+									<tr>
+										<td>1</td>
+										<td>55.5￥</td>
+										<td>55.5￥</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>55.5￥</td>
+										<td>55.5￥</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>55.5￥</td>
+										<td>55.5￥</td>
+									</tr>
+									<tr>
+										<td colspan="3">
+											<h4>合计收益：<span>166.5</span>￥</h4>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="4">
+											<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="glyphicon glyphicon-eye-close"></i> 关闭</button>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> <!--alter模态框_1__end-->
+		
+		<!--alter模态框_2__begin-->
+		<div class="modal fade" id="myModal_alter_2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel_2" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title" id="myModalLabel">您要的信息</h4>
+					</div>
+					<div class="modal-body">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<i class="glyphicon glyphicon-edit"></i> 收益信息
+								</h4>
+							</div>
+							<div class="panel-body">
+								<table class="table table-hover text-center">
+									<tr>
+										<td><strong>已卖出的座位</strong></td>
+										<td><strong>票价</strong></td>
+										<td><strong>小计</strong></td>
+									</tr>
+									<tr>
+										<td>1</td>
+										<td>55.5￥</td>
+										<td>55.5￥</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>55.5￥</td>
+										<td>55.5￥</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>55.5￥</td>
+										<td>55.5￥</td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td>55.5￥</td>
+										<td>55.5￥</td>
+									</tr>
+									<tr>
+										<td colspan="3">
+											<h4>合计收益：<span>222.0</span>￥</h4>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="4">
+											<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="glyphicon glyphicon-eye-close"></i> 关闭</button>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> <!--alter模态框_2__end-->
+		
+		<!--alter模态框_3__begin-->
+		<div class="modal fade" id="myModal_alter_3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel_3" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title" id="myModalLabel">您要的信息</h4>
+					</div>
+					<div class="modal-body">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<i class="glyphicon glyphicon-edit"></i> 收益信息
+								</h4>
+							</div>
+							<div class="panel-body">
+								<table class="table table-hover text-center">
+									<tr>
+										<td><strong>已卖出的座位</strong></td>
+										<td><strong>票价</strong></td>
+										<td><strong>小计</strong></td>
+									</tr>
+									<tr>
+										<td>1</td>
+										<td>55.5￥</td>
+										<td>55.5￥</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>55.5￥</td>
+										<td>55.5￥</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>55.5￥</td>
+										<td>55.5￥</td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td>55.5￥</td>
+										<td>55.5￥</td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>55.5￥</td>
+										<td>55.5￥</td>
+									</tr>
+									<tr>
+										<td colspan="3">
+											<h4>合计收益：<span>277.5</span>￥</h4>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="4">
+											<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="glyphicon glyphicon-eye-close"></i> 关闭</button>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> <!--alter模态框_3__end-->
+		
+		
+		
+		
+		<script>
+			$(function () { $('#collapseTow').collapse('show')});
+			$(function(){
+				
+				
+				
+				
+			})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<script type="text/javascript" src="js/jquery-1.11.0.js" ></script>
+	</head>
+	<body>
+		<!--两端对齐的导航-->
+		<div class="container">
+			<p>两端对齐胶囊导航</p>
+			<ul class="nav nav-pills nav-justified">
+				<li class="active">
+					<a href="#">Home</a>
+				</li>
+				<li>
+					<a href="#">SVN</a>
+				</li>
+				<li>
+					<a href="#">IOS</a>
+				</li>
+				<li>
+					<a href="#">VB.NET</a>
+				</li>
+				<li>
+					<a href="#">Java</a>
+				</li>
+				<li>
+					<a href="#">PHP</a>
+				</li>
+			</ul>
+			<br /><br />
+			
+			<p>两端对齐Tab导航</p>
+			<ul class="nav nav-tabs nav-justified">
+				<li class="active">
+					<a href="#">Home</a>
+				</li>
+				<li>
+					<a href="#">SVN</a>
+				</li>
+				<li>
+					<a href="#">IOS</a>
+				</li>
+				<li>
+					<a href="#">VB.NET</a>
+				</li>
+				<li>
+					<a href="#">Java</a>
+				</li>
+				<li>
+					<a href="#">PHP</a>
+				</li>
+			</ul>
+		</div>
+		
+		<script>
+			$(function(){
+				$(".nav li").hover(function(){
+					$(this).addClass("active").siblings().removeClass("active")
+				})
+			})
+		</script>
+	</body>
+</html>

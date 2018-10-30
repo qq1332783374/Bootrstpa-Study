@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<script type="text/javascript" src="js/jquery-1.11.0.js" ></script>
+	</head>
+	<body>
+		<!--胶囊试的导航栏-->
+		<div class="container">
+			<p>胶囊试的导航栏</p>
+			<ul class="nav nav-pills">
+				<li class="active">
+					<a href="#">Home</a>
+				</li>
+				<li>
+					<a href="#">SVN</a>
+				</li>
+				<li>
+					<a href="#">IOS</a>
+				</li>
+				<li>
+					<a href="#">VB.NET</a>
+				</li>
+				<li>
+					<a href="#">Java</a>
+				</li>
+				<li>
+					<a href="#">PHP</a>
+				</li>
+			</ul>
+		</div>
+		
+		<script>
+			$(function(){
+				$(".nav li").hover(function(){
+					$(this).addClass("active").siblings().removeClass("active")
+				})
+			})
+		</script>
+	</body>
+</html>

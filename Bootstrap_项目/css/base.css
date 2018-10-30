@@ -1,0 +1,8 @@
+.user_logo {
+	margin-top: -10px;
+}
+
+.table>tbody>tr>td {
+	line-height: 2.428571;
+	cursor: pointer;
+}

@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>HP官网</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>   <!--Boostrap框架-->
+		<link rel="stylesheet" type="text/css" href="css/animate.css"/>   <!--animate动画--> 
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.css"/> <!-- 字体图标-->
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js" ></script>   <!--jQuery-->
+		<script type="text/javascript" src="js/bootstrap.js" ></script>   <!--Boostrap_jQuery-->
+		<script type="text/javascript" src="js/wow.min.js" ></script>   <!--滚动动画_wow-->
+		<script type="text/javascript" src="js/jquery.singlePageNav.min.js" ></script>  <!--导航-->
+		<style>
+			#header{
+				background: #FFFFFF;
+				color: #777777;
+				font-weight: bold;
+				box-shadow: 1px 2px 4px #DDDDDD;
+			}
+			#banner{
+				margin-top: 70px;
+				background: url(img/home-bg.jpg) no-repeat;
+				background-size: cover;
+				width: 100%;
+				height: auto;
+				font-family: "微软雅黑";
+				text-align: center;
+			}
+			#banner h1{
+				color: #FFFFFF;
+			}
+			#banner p{
+				color: #FFFFFF;
+				line-height: 30px;
+    			font-size: 16px;
+			}
+			#banner img{
+				margin: 0 auto;
+				margin-top: 35px;
+			}
+			.lvjing{
+				width: 100%;
+				height: 100%;
+				background: rgba(0,0,0,0.7);
+				padding: 90px 0;
+			}
+			#bbs{
+				padding: 70px 0px;
+				text-align: center;
+			}
+			#bbs a{
+				text-decoration: none;
+				color: #777777;
+			}
+			#bbs .col-md-4{
+				padding: 15px;
+			}
+			#bbs .col-md-4:hover{
+				background: #f1f1f1;
+				box-shadow: 1px 1px 4px #ccc;
+			}
+			#h5{
+				background: #F8F8F8;
+				padding: 80px 0px;
+			}
+			#h5 p{
+				line-height: 25px;
+			}
+			._icon{
+				background: rgb(64, 210, 177);
+			    color: #fff;
+			    border-radius: 50%;
+			    width: 40px;
+			    height: 40px;
+			    text-align: center;
+			    line-height: 40px;
+			    margin-right: 20px;
+			}
+			#boostrap{
+				background: #FFFFFF;
+				padding: 80px 0px;
+			}
+			#boostrap p{
+				line-height: 25px;
+			}
+			#course{
+				background: #F8F8F8;
+				padding: 80px 0px;
+			}
+			#course .course{
+				background: #FFFFFF;
+				padding: 10px 10px;
+				margin-top: 20px;
+				box-shadow: 1px 2px 14px #DDDDDD;
+			}
+			#course .course a{
+				margin-top: 10px;
+			}
+			#app{
+				background: #FFFFFF;
+				padding: 80px 0px;
+			}
+			#app h1{
+				margin-bottom: 30px;
+			}
+			#app button{
+				padding: 6px 30px;
+    			margin: 10px 0;
+			}
+			#contact{
+				padding: 80px 0px;
+				background: #0F0F0F;
+				color: #FFFFFF;
+			}
+			#footer{
+				margin-top: 20px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<!--head begin-->
+		<nav class="navbar navbar-default navbar-fixed-top " id="header">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="index.html" class="navbar-brand"><span class="text-primary">IT·</span>广现学院</a>
+				</div>
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href="#banner">首页</a>
+					</li>
+					<li>
+						<a href="#bbs">论坛</a>
+					</li>
+					<li>
+						<a href="#h5">前端开发</a>
+					</li>
+					<li>
+						<a href="#course">最新课程</a>
+					</li>
+					<li>
+						<a href="#app">移动APP</a>
+					</li>
+					<li>
+						<a href="#contact">联系我们</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<!--head begin-->
+		
+		<!--banner begin-->
+		<div id="banner">
+			<div class="lvjing">
+				<div class="container">
+					<div class="col-md-1">
+						
+					</div>
+					<div class="col-md-10">
+						<h1 class="wow fadeInUp">高举社会主义旗帜</h1>
+						<p class="wow fadeInUp">积极弘扬马克思主义，以社会主义建设为中心</p>
+						<img src="img/1.jpg" class="img-responsive wow fadeInUp" />
+					</div>
+					<div class="col-md-1">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--banner end-->
+		<!--bbs begin-->
+		<div id="bbs">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 wow fadeInLeft">
+						<a href="#">
+							<img src="img/a.png"  />
+							<h1>安卓开发</h1>
+							<p>Android开发技术交流、问题求助、实战案例分享</p>
+						</a>
+					</div>
+					<div class="col-md-4 wow fadeInUp">
+						<a href="#">
+							<img src="img/b.png" />
+							<h1>安卓开发</h1>
+							<p>Android开发技术交流、问题求助、实战案例分享</p>
+						</a>
+					</div>
+					<div class="col-md-4 wow fadeInRight">
+						<a href="#">
+							<img src=" img/i.png" />
+							<h1>安卓开发</h1>
+							<p>Android开发技术交流、问题求助、实战案例分享</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--bbs end-->
+		
+		<!--h5 begin-->
+		<div id="h5">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 wow fadeInLeft">
+						<h2>前端工程师</h2>
+						<p><span class="glyphicon glyphicon-tag _icon"></span> 使用HTML5与CSS3技术轻松实现设备自适应展示。</p>
+						<p><span class="glyphicon glyphicon-tag _icon"></span> 清晰明了的语义代码结构，更高的可读性、更利于页面维护的。</p>
+					</div>
+					<div class="col-md-6 wow fadeInRight">
+						<img src="img/html5.jpg" class="img-responsive" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--h5 end-->
+		<!--Boostrap begin-->
+		<div id="boostrap">
+			<div class="container">
+				<div class="col-md-6 wow fadeInDown">
+					<img src="img/Bootstrap.jpg" class="img-responsive" />
+				</div>
+				<div class="col-md-6 wow fadeInUp">
+					<h2>前端工程师</h2>
+					<p><span class="glyphicon glyphicon-tag _icon"></span> 使用HTML5与CSS3技术轻松实现设备自适应展示。</p>
+					<p><span class="glyphicon glyphicon-tag _icon"></span> 清晰明了的语义代码结构，更高的可读性、更利于页面维护的。</p>
+				</div>
+			</div>
+		</div>
+		<!--Boostrap end-->
+		<!--course begin-->
+		<div id="course">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1>课程介绍</h1>
+					</div>
+				</div>
+				<div class="row wow rotateInDownLeft">
+					<div class="col-md-3">
+						<div class="course">
+							<img src="img/swift.jpg" class="img-responsive" />
+							<div class="pull-right">
+								<a href="#" class="btn btn-info">了解更多</a>
+								<a href="#" class="btn btn-primary">加入学习</a>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						
+					</div>
+					<div class="col-md-3">
+						<div class="course">
+							<img src="img/swift.jpg" class="img-responsive" />
+							<div class="pull-right">
+								<a href="#" class="btn btn-info">了解更多</a>
+								<a href="#" class="btn btn-primary">加入学习</a>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="course">
+							<img src="img/swift.jpg" class="img-responsive" />
+							<div class="pull-right">
+								<a href="#" class="btn btn-info">了解更多</a>
+								<a href="#" class="btn btn-primary">加入学习</a>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="course">
+							<img src="img/swift.jpg" class="img-responsive" />
+							<div class="pull-right">
+								<a href="#" class="btn btn-info">了解更多</a>
+								<a href="#" class="btn btn-primary">加入学习</a>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+				<div class="row wow rotateInDownRight">
+					<div class="col-md-3">
+						<div class="course">
+							<img src="img/swift.jpg" class="img-responsive" />
+							<div class="pull-right">
+								<a href="#" class="btn btn-info">了解更多</a>
+								<a href="#" class="btn btn-primary">加入学习</a>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						
+					</div>
+					<div class="col-md-3">
+						<div class="course">
+							<img src="img/swift.jpg" class="img-responsive" />
+							<div class="pull-right">
+								<a href="#" class="btn btn-info">了解更多</a>
+								<a href="#" class="btn btn-primary">加入学习</a>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="course">
+							<img src="img/swift.jpg" class="img-responsive" />
+							<div class="pull-right">
+								<a href="#" class="btn btn-info">了解更多</a>
+								<a href="#" class="btn btn-primary">加入学习</a>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="course">
+							<img src="img/swift.jpg" class="img-responsive" />
+							<div class="pull-right">
+								<a href="#" class="btn btn-info">了解更多</a>
+								<a href="#" class="btn btn-primary">加入学习</a>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--course end-->
+		<!--app begin-->
+		<div id="app">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<h1 class="wow fadeInUp">厚浦IT移动APP下载</h1>
+						<p class="wow fadeInUp">
+							全新UI交互，与新网站数据同步，更加丰富的课程，开启精彩无限，语音搜索课程，喊出你想要的课程，一件收藏，方便自己重复学习，离线下载课程，在哪儿都能开！
+						</p>
+						<button type="button" class="btn btn-success class="wow fadeInUp""><i class="fa fa-android"></i> Android版</button>
+						<button type="button" class="btn btn-default class="wow fadeInUp""><i class="fa fa-apple"></i> iPhone版</button>
+					</div>
+					<div class="col-md-6 wow fadeInUp">
+						<img src="img/app-banner.png" class="img-responsive" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--app end-->
+		<!--contact begin-->
+		<div id="contact">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<h1><i class="fa fa-commenting-o"></i> 联系我们</h1>
+						<p>广现学院成立于*******************</p>
+						<p><i class="glyphicon glyphicon-home"></i> 地址：广州天河区珠吉街道</p>
+						<p><i class="fa fa-phone"></i> 联系电话：000-000000</p>
+						<p><i class="glyphicon glyphicon-envelope"></i> 邮箱：000000@qq.com</p>
+					</div>
+					<div class="col-md-6">
+						<form class="form-horizontal">
+							<div class="form-group">
+								<div class="col-sm-2">
+									<label class="control-label">电话:</label>
+								</div>
+								<div class="col-sm-10">
+									<input type="text" class="form-control"/>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-2">
+									<label class="control-label">邮箱:</label>
+								</div>
+								<div class="col-sm-10">
+									<input type="text" class="form-control"/>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-2">
+									<label class="control-label">地址:</label>
+								</div>
+								<div class="col-sm-10">
+									<input type="text" class="form-control"/>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-2">
+									<label class="control-label">内容:</label>
+								</div>
+								<div class="col-sm-10">
+									<input type="text" class="form-control input-lg"/>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-md-4 pull-right">
+									<input type="button" class="form-control btn btn-info" value="提交"/>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--contact end-->
+		<!--footer begin-->
+		<div id="footer">
+			<div class="container">
+				<div class="row">
+					<p class="text-center" style="font-weight: bold;">
+						-作者：谭上彪- -制作于：2018/5/10 10：15-
+					</p>
+				</div>
+			</div>
+		</div>
+		<!--footer end-->
+		
+		<script>
+			$(function(){
+				$(".nav").singlePageNav({
+					offset:70
+				});
+				$(".navbar-collapse a").click(function(){
+					$(".navbar-collapse").collapse("hide");
+				})
+				new WOW().init();
+			})
+		</script>
+	</body>
+	
+</html>

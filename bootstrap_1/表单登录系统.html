@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<script type="text/javascript" src="js/jquery-1.11.0.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.min.js" ></script>
+		<style>
+			.login{
+				margin: 50px auto;
+				border: 1px solid #DDDDDD;
+				border-radius: 4px;
+				padding: 10px 10px;
+				width: 480px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container login">
+			<h4 class="text-center">宿舍登录系统</h4>
+			<form>
+				<div class="form-group">
+					<div class="input-group ">
+						<div class="input-group-addon">
+							<i class="glyphicon glyphicon-user"></i>
+						</div>
+						<input type="text" class="form-control" placeholder="请输入用户名" id="user" />
+						<span class="glyphicon form-control-feedback"></span>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="input-group ">
+						<div class=" input-group-addon">
+							<i class="glyphicon glyphicon-pencil"></i>
+						</div>
+						<input type="password" class="form-control" placeholder="请输入密码" id="pas"/>
+						<span class="glyphicon  form-control-feedback"></span>
+					</div>
+				</div>
+			</form>
+			<div >
+				<button type="button" class="btn btn-primary btn">登录</button>
+				<button type="button" class="btn btn-danger btn">注册</button>
+			</div>
+		</div>
+		
+		<script>
+			$(function(){
+				$("#user").focus(function(){
+					var fat = $(this).parents(".form-group")
+					$(fat).addClass("has-warning").removeClass("has-error has-success")   /*输入状态*/
+				})
+				$("#user").blur(function(){
+					var fat = $(this).parents(".form-group")
+					var input_val = $(this).val()
+					$(fat).removeClass("has-warning")
+					if(input_val !="admin"){
+						$(fat).addClass("has-error").find("span").addClass("glyphicon-remove").removeClass("glyphicon-ok")
+					}else{
+						$(fat).addClass("has-success").removeClass("has-error has-warning").find("span").addClass("glyphicon-ok").removeClass("glyphicon-remove")
+					}
+				})
+				
+				$("#pas").focus(function(){
+					var fat = $(this).parents(".form-group")
+					var input_val = $(this).val()
+					$(fat).addClass("has-warning").removeClass("has-error has-success")   /*输入状态*/
+				})
+				$("#pas").blur(function(){
+					var fat = $(this).parents(".form-group")
+					var input_val = $(this).val()
+					$(fat).removeClass("has-warning")   /*输入状态*/
+					if(input_val !="123456"){
+						$(fat).addClass("has-error").find("span").addClass("glyphicon-remove").removeClass("glyphicon-ok")
+					}else{
+						$(fat).addClass("has-success").removeClass("has-error has-warning").find("span").addClass("glyphicon-ok").removeClass("glyphicon-remove")
+					}
+				})
+			})
+		</script>
+	</body>
+</html>

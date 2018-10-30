@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/animate.css" />
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<script type="text/javascript" src="js/jquery-1.11.0.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.min.js" ></script>
+		<script type="text/javascript" src="js/base.js" ></script>
+		
+	</head>
+	<body>
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="index.html" class="navbar-brand">
+						<img src="img/user_1.jpg" class="img-circle user_logo" />
+					</a>
+				</div>
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="#">管理员：<strong>大美女</strong> </a>
+					</li>
+					<li class="navbar-btn">
+						<button type="button" class="btn btn-danger exit">退出登录</button>
+					</li>
+					<li>
+						<a href="#">20:00:00:晚上好</a>
+					</li>
+				</ul>
+			</div>
+		</nav> <!--导航栏end-->
+		
+		<div>
+			<div class="row">
+				<div class="col-md-2 col-lg-2 col-sm-2 col-xs-12 ">  <!--侧栏begin-->
+					<div class="panel-group" id="accordion">
+						<div class="panel panel-primary" >
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a href="#collapseOne" data-toggle="collapse" data-parent="#accordion" style="text-decoration: none;" >
+										<i class="glyphicon glyphicon-th-list"></i>  菜单列表
+									</a>
+								</h4>
+							</div>
+							<div class="panel-collapse collapse collapse-in" id="collapseOne">
+								<div class="panel-body">
+									Nihil anim keffiyeh helvetica, craft beer labore wes anderson  cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+								</div>
+							</div>
+						</div>
+						
+						<div class="panel panel-primary" >
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a href="#collapseTow" data-toggle="collapse" data-parent="#accordion" style="text-decoration: none;">
+										<i class="glyphicon glyphicon-wrench"></i>  基本设置
+									</a>
+								</h4>
+							</div>
+							<div class="panel-collapse collapse collapse-in" id="collapseTow">
+								<div class="panel-body">
+									<ul class="nav nav-pills nav-stacked">
+										<li class="dropdown active">
+											<a href="fcm.html"><i class="glyphicon glyphicon-triangle-right"></i> 电影类别管理</a>
+										</li>
+										<li>
+											<a href="fim.html"><i class="glyphicon glyphicon-triangle-right"></i> 电影信息管理</a>
+										</li>
+										<li>
+											<a href="HM.html"><i class="glyphicon glyphicon-triangle-right"></i> 放映大厅管理</a>
+										</li>
+										<li>
+											<a href="Staff.html"><i class="glyphicon glyphicon-triangle-right"></i> 员工信息管理</a>
+										</li>
+										<li>
+											<a href="Show.html"><i class="glyphicon glyphicon-triangle-right"></i> 放映信息管理</a>
+										</li>
+										<li>
+											<a href="Sale.html"><i class="glyphicon glyphicon-triangle-right"></i> 售票信息管理</a>
+										</li>
+										<li>
+											<a href="Earnings.html"><i class="glyphicon glyphicon-triangle-right"></i> 收益管理</a>
+										</li>
+										<li>
+											<a href="Overall.html"><i class="glyphicon glyphicon-triangle-right"></i> 总收入管理</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>    <!--侧栏end-->
+				
+				<div class="col-md-10 col-lg-10 col-sm-10 col-xs-12 " >    <!--主栏begin-->
+					<div class="row">  <!--面包屑导航栏begin-->
+						<div class="col-ms-12">
+							<ol class="breadcrumb">
+								<li><a href="#"><span class="glyphicon glyphicon-home"></span> 首页</a> </li>
+								<li><a href="#">网址信息</a> </li>
+								<li class="active"><a href="#">当前语言:<span class="text-danger">中文</span> </a> </li>
+							</ol>
+						</div>
+					</div>  <!--面包屑导航栏end-->
+					
+					<div class="row container-fluid">
+						<div class="col-md-12 ">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><i class="glyphicon glyphicon-list "></i> 操作信息管理</h4>
+								</div>
+								<div class="panel-body">
+									<table class="table table-bordered table-hover text-center table_fcm">
+										<tr>
+											<td><strong>编号</strong></td>
+											<td><strong>电影类别</strong></td>
+											<td><strong>电影备注</strong></td>
+											<td><strong>操作</strong></td>
+										</tr>
+										<tr>
+											<td>14</td>
+											<td>动作类</td>
+											<td>热血激情</td>
+											<td>
+												<button class="btn btn-danger modification" data-toggle="modal" data-target="#myModal" ><i class="glyphicon glyphicon-pencil"></i> 修改</button>
+											</td>
+										</tr>
+										<tr>
+											<td>15</td>
+											<td>爱情类</td>
+											<td>干柴烈火</td>
+											<td>
+												<button class="btn btn-danger modification" data-toggle="modal" data-target="#myModal"><i class="glyphicon glyphicon-pencil"></i> 修改</button>
+											</td>
+										</tr>
+										<tr>
+											<td>16</td>
+											<td>文学类</td>
+											<td>可歌可泣</td>
+											<td>
+												<button class="btn btn-danger modification" data-toggle="modal" data-target="#myModal" ><i class="glyphicon glyphicon-pencil"></i> 修改</button>
+											</td>
+										</tr>
+									</table>
+								</div>
+								<div class="panel-footer">
+									<button class="btn btn-success" data-toggle="modal" data-target="#myModal_add" id="add"><i class="glyphicon glyphicon-ok"></i> 增加</button>
+									<form class="form-inline pull-right">
+										<div class="form-group">
+											<div class="input-group">
+												<input type="text" class="form-control" placeholder="搜索" id="search" />
+												<div class="input-group-btn">
+													<button type="button" class="btn btn-info" id="search_btn">搜索</button>
+												</div>
+											</div>
+										</div>
+									</form>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<!--修改模态框-->
+					<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">  
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<h4 class="modal-title" id="myModalLabel">请输入您要修改的信息</h4>
+								</div>
+								<div class="modal-body">
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											<h4 class="panel-title">
+												<i class="glyphicon glyphicon-edit"></i> 修改电影类别
+											</h4>
+										</div>
+										<div class="panel-body">
+											<form class="form-horizontal">
+												<div class="form-group">
+													<label class="col-sm-2 control-label">编号:</label>
+													<div class="col-sm-10">
+														<input class="form-control" type="text"  id="num"/>
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="col-sm-2 control-label">电影类别:</label>
+													<div class="col-sm-10">
+														<input class="form-control" type="text"  id="mc"/>
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="col-sm-2 control-label">电影备注:</label>
+													<div class="col-sm-10">
+														<input class="form-control input-lg" type="text"  id="mn"/>
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="col-sm-offset-2 col-sm-10">
+														<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+														<button type="button" class="btn btn-primary sub" data-dismiss="modal"><i class="glyphicon glyphicon-ok"></i> 提交更改</button>
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>  <!--修改表单end-->
+								</div>  <!-- /.modal-body -->
+							</div><!-- /.modal-content -->
+						</div><!-- /.modal -->
+					</div>
+					
+					<!--增加 模态框-->
+					<div class="modal fade" id="myModal_add" tabindex="-2" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<h4 class="modal-title" id="myModalLabel">请输入您要增加的信息</h4>
+								</div>
+								<div class="modal-body">
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											<h4 class="panel-title">
+												<i class="glyphicon glyphicon-edit"></i> 增加电影类别
+											</h4>
+										</div>
+										<div class="panel-body">
+											<form class="form-horizontal">
+												<div class="form-group">
+													<label class="col-sm-2 control-label">编号:</label>
+													<div class="col-sm-10">
+														<input class="form-control" type="text"  id="num"/>
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="col-sm-2 control-label">电影类别:</label>
+													<div class="col-sm-10">
+														<input class="form-control" type="text"  id="mc"/>
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="col-sm-2 control-label">电影备注:</label>
+													<div class="col-sm-10">
+														<input class="form-control input-lg" type="text"  id="mn"/>
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="col-sm-offset-2 col-sm-10">
+														<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+														<button type="button" class="btn btn-primary add_ok" data-dismiss="modal"><i class="glyphicon glyphicon-ok"></i> 提交更改</button>
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>  <!--修改表单end-->
+								</div><!-- /.modal-body -->
+							</div><!-- /.modal-content -->
+						</div><!-- /.modal -->
+					</div>
+					
+					
+					
+					
+				</div>     <!--主栏end-->
+			</div>
+		</div>	
+		
+	</body>
+</html>

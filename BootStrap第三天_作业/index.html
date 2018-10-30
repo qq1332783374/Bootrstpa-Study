@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<script type="text/javascript" src="js/jquery-1.11.0.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.min.js" ></script>
+		<style>
+			.div-border{
+				border: 1px solid #DDDDDD;
+			}
+		</style>
+	</head>
+	<body>
+		
+			<nav class="navbar navbar-default navbar-fixed-top ">  <!--导航栏begin-->
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle = "collapse" data-target="#example-navbar-collapse">
+							<span class="sr-only">切换栏</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span> 
+						</button>
+						<a href="#" class="navbar-brand">LOGO </a>
+					</div>
+					<div class="collapse navbar-collapse" id="example-navbar-collapse">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="#">Web</a> </li>
+							<li><a href="#">HTML5</a> </li>
+							<li><a href="#">CSS3</a> </li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle = "dropdown">JavaScript<span class="caret"></span> </a>
+								<ul class="dropdown-menu">
+									<li class="dropdown-header">新闻</li>
+									<li><a href="#">新闻1 </a> </li>
+									<li><a href="#">新闻2 </a> </li>
+									<li><a href="#">新闻3 </a> </li>
+									<li class="divider"></li>
+									<li><a href="#">友情链接1</a> </li>
+									<li class="divider"></li>
+									<li><a href="#">友情链接2</a> </li>
+								</ul>
+							</li>
+						</ul>
+						<form class="navbar-form navbar-right">
+							<div class="form-group">
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="搜素"/>
+									<div class="input-group-btn">
+										<button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span> </button>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</nav>  <!--导航栏 end-->
+
+		<div style="margin-top: 80px;" class="container">  <!--内容begin-->
+			<div class="row">
+				<div class="col-md-9 col-lg-9 col-sm-9 col-xs-12 ">
+					<h2 class="text-primary text-center">日本女孩研发狗狗机器人,告诉你今天体味如何?</h2>
+					<div>
+						<p class="text-muted ">
+							或许纯粹用机器测定你身上有无臭味，还不能激发人的耻度，但日本一家建设公司旗下的「CrazyLabo」疯狂实验室与北九州工业高等专门学校合作推出的人形与狗形气味探测机器人，将激发你内心最深处的羞耻感（或挫败感）！
+						</p>
+						<div class="row">
+							<div class="col-md-12 col-sm-12 col-xs-12 col-lg-12 text-center">
+								<img src="img/sample-image.jpg" class="img-thumbnail" />
+							</div>
+						</div>
+						<br />
+						<p class="text-muted">
+							图中的这位可爱的女孩叫做「香织」，虽然被她眼睛直视感觉怪恐怖的，但微启的双唇，其实内部藏有气味探测装置。对她的双唇间吹气后，香织会从好到坏四个层次中归类你的口气。若你是香织的菜，她会告诉你：「柑橘般的酸甜滋味」（恋爱了？）；但太糟糕也会实话实说，毕竟她还不会说谎啊！
+						</p>
+						<p class="text-muted">
+							相对于异常恐怖的香织，狗形气味机器人就可爱多啦。主要的功用是闻闻你的脚味，虽然它不会说话，但会以肢体语言表达感受。当刚穿上袜子给它嗅嗅，通常会开心地对你叫几声。但最糟的情况下，它会直接气绝身亡，背景音乐将拨放萧邦的送葬进行曲。虽然表达形式有种恶搞的感觉，但点击来源连结观看朝日新闻的视频，你应该会笑出来！
+						</p>
+					</div>
+					<br />
+					<div>
+						<h4 class="text-muted">文章导航</h4>
+						<div class="row">
+							<div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
+								<img src="img/1.jpg" class="img-thumbnail" />
+							</div>
+							<div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
+								<img src="img/2.jpg" class="img-thumbnail" />
+							</div>
+							<div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
+								<img src="img/3.jpg" class="img-thumbnail" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2 col-lg-2 col-sm-2 col-xs-12 col-lg-offset-1  div-border hidden-xs">
+					<h4 class="text-muted text-center">随手文章 </h4>
+				</div>
+			</div>
+		</div>   <!--内容end-->
+		
+		
+			<!--<nav class=" navbar-fixed-bottom"> --> <!--底栏begin-->
+			<!--<div class="navbar-header">
+				<a class="navbar-brand" href="#">LOGO</a>
+			</div>-->
+			<ul class="pagination pagination-lg navbar-fixed-bottom ">
+				<li><a href="#"><span class="glyphicon glyphicon-menu-left"></span> </a> </li>
+				<li><a href="#"><span class="glyphicon glyphicon-menu-right"></span> </a> </li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle = "dropdown"><span class="glyphicon glyphicon-menu-hamburger"></span> </a> 
+					<ul class="dropdown-menu">
+						<li>
+							<a href="#">Home</a>
+						</li>
+						<li>
+							<a href="#">Home1</a>
+						</li>
+						<li>
+							<a href="#">Home2</a>
+						</li>
+						<li>
+							<a href="#">Home2</a>
+						</li>
+					</ul>
+				</li>
+				<li><a href="#"><span class="glyphicon glyphicon-list-alt"></span> </a> </li>
+				<li><a href="#"><span class="glyphicon glyphicon-home"></span> </a> </li>
+				
+			</ul>
+		<!--</nav> --><!--底栏end-->
+		
+	</body>
+</html>
